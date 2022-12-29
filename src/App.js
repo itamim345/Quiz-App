@@ -4,14 +4,16 @@ import Header from './components/Header/Header';
 import Home from './Pages/Home/Home';
 import Quizes from './Pages/Quizes/Quizes';
 import Score from './Pages/Score/Score';
+import { useState } from 'react';
 
 function App() {
+  const [name, setName] = useState("");
   return (
     <BrowserRouter>
       <div className="App">
         <Header/>
         <Routes>
-          <Route path='/' element={<Home/>} />
+          <Route path='/' element={<Home name={name} setName={setName} />} />
           <Route path='/quizes' element={<Quizes/>} />
           <Route path='/score' element={<Score/>} />
         </Routes>
