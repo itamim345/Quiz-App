@@ -1,6 +1,7 @@
 import { Button, MenuItem, TextField } from '@material-ui/core';
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import ErrorMsg from '../../components/ErrorMsg/ErrorMsg';
 import "../../Data/Categories"
 import Categories from '../../Data/Categories';
 
@@ -26,6 +27,7 @@ export default function Home({name, setName, getQuestions}) {
         <h3>Configure the Quiz Options</h3>
       </div>
       <div className="quiz-configure-options">
+        {error && <ErrorMsg/>}
         <TextField
           label="Enter your name"
           variant="outlined"
