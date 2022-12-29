@@ -1,4 +1,4 @@
-import { MenuItem, TextField } from '@material-ui/core';
+import { Button, MenuItem, TextField } from '@material-ui/core';
 import React, { useState } from 'react';
 import "../../Data/Categories"
 import Categories from '../../Data/Categories';
@@ -51,6 +51,10 @@ export default function Home({name, setName}) {
             Hard
           </MenuItem>
         </TextField>
+
+        <Button variant="contained" color="secondary">
+          Secondary
+        </Button>
       </div>
     </div>
   );
