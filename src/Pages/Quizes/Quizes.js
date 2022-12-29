@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
-export default function Quizes() {
+export default function Quizes({name, questions, score, setScore}) {
+    useEffect(() => {
+      console.log(questions);
+    }, [questions]);
   return (
     <div>
       Quizes
