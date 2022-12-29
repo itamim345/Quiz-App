@@ -10,7 +10,7 @@ import axios from 'axios';
 function App() {
   const [name, setName] = useState("");
   const [questions, setQuestions] = useState();
-  const [score, setScore] = useState();
+  const [score, setScore] = useState(0);
   const getQuestions = async (category="", difficulty="") => {
     const { data } = await axios.get(
       `https://opentdb.com/api.php?amount=10${
@@ -25,7 +25,7 @@ function App() {
         <Header/>
         <Routes>
           <Route path='/' element={<Home name={name} setName={setName} getQuestions={getQuestions} />} />
-          <Route path='/quiz' element={<Quizes/>} />
+          <Route path='/quiz' element={<Quizes name={name} questions={questions} score={score} setScore={setScore}/>} />
           <Route path='/score' element={<Score/>} />
         </Routes>
       </div>
