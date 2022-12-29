@@ -24,7 +24,22 @@ export default function Home() {
           ))}
         </TextField>
 
-        
+        <TextField
+          select
+          label="Select Difficulty"
+          variant="outlined"
+          size="small"
+        >
+         <MenuItem key="Easy" value="easy">
+         Easy
+         </MenuItem>
+         <MenuItem key="Medium" value="medium">
+         Medium
+         </MenuItem>
+         <MenuItem key="Hard" value="hard">
+         Hard
+         </MenuItem>
+        </TextField>
       </div>
     </div>
   );
