@@ -1,11 +1,25 @@
 import { Button, MenuItem, TextField } from '@material-ui/core';
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import "../../Data/Categories"
 import Categories from '../../Data/Categories';
 
-export default function Home({name, setName}) {
+export default function Home({name, setName, getQuestions}) {
     const [category, setCategory] = useState("");
     const [difficulty, setDifficulty] = useState("");
+    const [error, setError] = useState(false);
+    const navigate = useNavigate()
+
+    const handleSubmit = () => {
+        if(!category || !difficulty || !name){
+            setError(true)
+            return;
+        }else {
+            setError(false)
+            getQuestions(category,difficulty);
+            navigate("/quiz")
+        }
+    }
   return (
     <div className="home">
       <div className="quiz-configure-title">
@@ -52,7 +66,7 @@ export default function Home({name, setName}) {
           </MenuItem>
         </TextField>
 
-        <Button variant="contained" color="secondary">
+        <Button variant="contained" color="secondary" onClick={handleSubmit}>
           Secondary
         </Button>
       </div>
