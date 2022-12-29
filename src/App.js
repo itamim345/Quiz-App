@@ -8,13 +8,16 @@ import { useState } from 'react';
 
 function App() {
   const [name, setName] = useState("");
+  const getQuestions = () => {
+
+  }
   return (
     <BrowserRouter>
       <div className="App">
         <Header/>
         <Routes>
-          <Route path='/' element={<Home name={name} setName={setName} />} />
-          <Route path='/quizes' element={<Quizes/>} />
+          <Route path='/' element={<Home name={name} setName={setName} getQuestions={getQuestions} />} />
+          <Route path='/quiz' element={<Quizes/>} />
           <Route path='/score' element={<Score/>} />
         </Routes>
       </div>

@@ -1,8 +1,5 @@
 const Categories = [
-  {
-    category: "General Knowledge",
-    value: 9,
-  },
+  {category: "General Knowledge",value: 9,},
   { category: "Books", value: 10 },
   { category: "Films", value: 11 },
   { category: "Music", value: 12 },
@@ -18,7 +15,7 @@ const Categories = [
   { category: "Geography", value: 22 },
   { category: "History", value: 23 },
   { category: "Politics", value: 24 },
-  // { category: "Art", value: 25 },
+  { category: "Art", value: 25 },
   { category: "Celebrities", value: 26 },
   { category: "Animals", value: 27 },
   { category: "Vehicles", value: 28 },
