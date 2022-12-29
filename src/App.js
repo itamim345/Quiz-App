@@ -5,13 +5,18 @@ import Home from './Pages/Home/Home';
 import Quizes from './Pages/Quizes/Quizes';
 import Score from './Pages/Score/Score';
 import { useState } from 'react';
+import axios from 'axios';
 
 function App() {
   const [name, setName] = useState("");
   const [questions, setQuestions] = useState();
   const [score, setScore] = useState();
-  const getQuestions = () => {
-    
+  const getQuestions = async() => {
+    const { data } = await axios.get(
+      `https://opentdb.com/api.php?amount=10${
+        category && `&category=${category}`
+      }${difficulty && `&difficulty=${difficulty}`}&type=multiple`
+    );
   }
   return (
     <BrowserRouter>
