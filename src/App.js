@@ -8,8 +8,10 @@ import { useState } from 'react';
 
 function App() {
   const [name, setName] = useState("");
+  const [questions, setQuestions] = useState();
+  const [score, setScore] = useState();
   const getQuestions = () => {
-
+    
   }
   return (
     <BrowserRouter>
