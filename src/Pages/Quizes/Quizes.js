@@ -2,7 +2,7 @@ import { CircularProgress } from '@material-ui/core';
 import React, { useEffect, useState } from 'react';
 import Question from '../../components/Question/Question';
 
-export default function Quizes({name, questions, score, setScore}) {
+export default function Quizes({name, questions, score, setScore, getQuizes}) {
     const [options, setOptions] = useState();
     const [defaultQstn, setDefaultQstn] = useState(0);
     useEffect(() => {
@@ -26,7 +26,16 @@ export default function Quizes({name, questions, score, setScore}) {
           <div className="additinal-info">
             <span>Catagory: {questions[defaultQstn].category} </span>
             <span>| Score: {score}</span>
-            <Question/>
+            <Question 
+                defaultQstn={defaultQstn}
+                setDefaultQstn={setDefaultQstn}
+                questions={questions}
+                options={options}
+                correct_answer={questions[defaultQstn]?.correct_answer}
+                score={score}
+                setScore={setScore}
+                getQuizes={getQuizes}
+            />
           </div>
         </>
       ) : (
