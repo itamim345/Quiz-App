@@ -1,3 +1,4 @@
+import { CircularProgress } from '@material-ui/core';
 import React, { useEffect, useState } from 'react';
 
 export default function Quizes({name, questions, score, setScore}) {
@@ -8,7 +9,7 @@ export default function Quizes({name, questions, score, setScore}) {
           questions &&
             handleShuffle([
               questions[defaultQstn]?.correct_answer,
-              ...questions[defaultQstn]?.incorrect_answer,
+              ...questions[defaultQstn]?.incorrect_answers,
             ])
         );
     }, [questions]);
@@ -18,7 +19,7 @@ export default function Quizes({name, questions, score, setScore}) {
     }
   return (
     <div>
-      Quizes
+      
     </div>
   );
 }
