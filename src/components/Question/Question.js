@@ -13,6 +13,13 @@ export default function Question({ defaultQstn, setDefaultQstn, questions, optio
       return "select"
     }
   }
+  const handleCheck = (optn) => {
+    setSelected(optn);
+    if(optn === correct_answer){
+      setScore(score+1);
+    }
+    setError(false);
+  }
   return <div>
     <h2>Question: {defaultQstn+1}</h2>
     <div className='question-container'>
@@ -21,7 +28,7 @@ export default function Question({ defaultQstn, setDefaultQstn, questions, optio
         {error && <ErrorMsg/>}
         {
           options && options.map(optn => (
-            <button onClick={() => {}} className={`singleOption ${selected && handleSelect(optn)}`} key={optn} disabled={selected}>{optn}</button>
+            <button onClick={() => handleCheck(optn)} className={`singleOption ${selected && handleSelect(optn)}`} key={optn} disabled={selected}>{optn}</button>
           ))
         }
       </div>
