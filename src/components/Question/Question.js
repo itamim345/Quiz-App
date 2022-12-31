@@ -4,6 +4,15 @@ import ErrorMsg from '../ErrorMsg/ErrorMsg';
 export default function Question({ defaultQstn, setDefaultQstn, questions, options, correct_answer, score, setScore, getQuizes}) {
   const [selected, setSelected] = useState();
   const [error, setError] = useState(false);
+  const handleSelect = (optn) => {
+    if(selected === optn && selected===correct_answer){
+      return "select"
+    } else if (selected === optn && selected !== correct_answer){
+      return "wrong"
+    }else if (optn === correct_answer){
+      return "select"
+    }
+  }
   return <div>
     <h2>Question: {defaultQstn+1}</h2>
     <div className='question-container'>
@@ -12,7 +21,7 @@ export default function Question({ defaultQstn, setDefaultQstn, questions, optio
         {error && <ErrorMsg/>}
         {
           options && options.map(optn => (
-            <button>{optn}</button>
+            <button onClick={() => {}} className={`singleOption ${selected && handleSelect(optn)}`} key={optn} disabled={selected}>{optn}</button>
           ))
         }
       </div>
