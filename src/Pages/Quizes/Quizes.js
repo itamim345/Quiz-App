@@ -20,11 +20,16 @@ export default function Quizes({name, questions, score, setScore}) {
   return (
     <div>
       <span>Welcome {name}</span>
-      {
-        questions ? ("hi"): (
-          <CircularProgress size={150} ></CircularProgress>  
-        )
-      }
+      {questions ? (
+        <>
+          <div className="additinal-info">
+            <span>Catagory: {questions[defaultQstn].category} </span>
+            <span>| Score: {score}</span>
+          </div>
+        </>
+      ) : (
+        <CircularProgress size={150} thickness={1}></CircularProgress>
+      )}
     </div>
   );
 }
