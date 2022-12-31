@@ -1,5 +1,6 @@
 import { CircularProgress } from '@material-ui/core';
 import React, { useEffect, useState } from 'react';
+import Question from '../../components/Question/Question';
 
 export default function Quizes({name, questions, score, setScore}) {
     const [options, setOptions] = useState();
@@ -25,6 +26,7 @@ export default function Quizes({name, questions, score, setScore}) {
           <div className="additinal-info">
             <span>Catagory: {questions[defaultQstn].category} </span>
             <span>| Score: {score}</span>
+            <Question/>
           </div>
         </>
       ) : (
