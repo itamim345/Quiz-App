@@ -19,6 +19,7 @@ export default function Quizes({name, questions, score, setScore}) {
     }
   return (
     <div>
+      <span>Welcome {name}</span>
       
     </div>
   );
