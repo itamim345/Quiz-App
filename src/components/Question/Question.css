@@ -1,0 +1,6 @@
+.question-options button {
+    display: block;
+    border: none;
+    padding: 10px;
+    font-size: 1.4rem;
+}
