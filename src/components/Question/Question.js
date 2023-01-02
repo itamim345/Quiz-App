@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ErrorMsg from '../ErrorMsg/ErrorMsg';
+import '../Question/Question.css'
 
 export default function Question({ defaultQstn, setDefaultQstn, questions, options, correct_answer, score, setScore, getQuizes}) {
   const [selected, setSelected] = useState();
