@@ -10,7 +10,7 @@ export default function Score({name, score}) {
       <h2>
         Your Score is - <b>{score}</b>
       </h2>
-      <Button href='/'>Start Quiz Again</Button>
+      <Button variant="contained" color="secondary" href='/'>Start Quiz Again</Button>
     </div>
   );
 }
