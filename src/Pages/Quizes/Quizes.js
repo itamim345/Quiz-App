@@ -13,7 +13,7 @@ export default function Quizes({name, questions, score, setScore, getQuizes}) {
               ...questions[defaultQstn]?.incorrect_answers,
             ])
         );
-    }, [questions]);
+    }, [questions, defaultQstn]);
 
    const  handleShuffle  = (myoptions) => {
         return myoptions.sort(() => Math.random() - 0.5)
