@@ -1,11 +1,13 @@
 import { Button } from '@material-ui/core';
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import ErrorMsg from '../ErrorMsg/ErrorMsg';
 import '../Question/Question.css'
 
 export default function Question({ defaultQstn, setDefaultQstn, questions, options, correct_answer, score, setScore, getQuizes}) {
   const [selected, setSelected] = useState();
   const [error, setError] = useState(false);
+  const navigate = useNavigate()
   const handleSelect = (optn) => {
     if(selected === optn && selected===correct_answer){
       return "select"
