@@ -26,7 +26,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home name={name} setName={setName} getQuestions={getQuestions} />} />
           <Route path='/quiz' element={<Quizes name={name} questions={questions} score={score} setScore={setScore}/>} />
-          <Route path='/score' element={<Score/>} />
+          <Route path='/score' element={<Score />} />
         </Routes>
       </div>
     </BrowserRouter>

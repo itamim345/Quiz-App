@@ -26,7 +26,7 @@ export default function Question({ defaultQstn, setDefaultQstn, questions, optio
   }
   const handleNext = () => {
     if(defaultQstn > 8){
-      navigate("/result")
+      navigate("/score")
     }else if (selected){
       setDefaultQstn(defaultQstn+1);
       setSelected()
