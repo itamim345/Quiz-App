@@ -22,6 +22,11 @@ export default function Question({ defaultQstn, setDefaultQstn, questions, optio
     }
     setError(false);
   }
+  const handleNext = () => {
+    if(defaultQstn > 8){
+      navigate("/result")
+    }
+  }
   return (
     <div>
       <h2>Question: {defaultQstn + 1}</h2>
@@ -45,7 +50,7 @@ export default function Question({ defaultQstn, setDefaultQstn, questions, optio
           <Button variant="contained" color="secondary" href="/">
             Quit
           </Button>
-          <Button variant="contained" color="primary">
+          <Button variant="contained" color="primary" onClick={handleNext}>
             Next
           </Button>
         </div>
