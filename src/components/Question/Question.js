@@ -30,6 +30,8 @@ export default function Question({ defaultQstn, setDefaultQstn, questions, optio
     }else if (selected){
       setDefaultQstn(defaultQstn+1);
       setSelected()
+    }else {
+      setError("Please select any option")
     }
   }
   return (
