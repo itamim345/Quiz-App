@@ -1,3 +1,4 @@
+import { Button } from '@material-ui/core';
 import React from 'react';
 
 export default function Score({name, score}) {
@@ -9,6 +10,7 @@ export default function Score({name, score}) {
       <h2>
         Your Score is - <b>{score}</b>
       </h2>
+      <Button href='/'>Start Quiz Again</Button>
     </div>
   );
 }
