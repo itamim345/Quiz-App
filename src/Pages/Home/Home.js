@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import ErrorMsg from '../../components/ErrorMsg/ErrorMsg';
 import "../../Data/Categories"
 import Categories from '../../Data/Categories';
-
+import "../Home/Home.css"
 export default function Home({name, setName, getQuestions}) {
     const [category, setCategory] = useState("");
     const [difficulty, setDifficulty] = useState("");

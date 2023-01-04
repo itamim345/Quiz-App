@@ -1,0 +1,12 @@
+.home {
+    display: flex;
+}
+.left-home{
+    width: 50%;
+}
+.right-home {
+    width: 50%;
+}
+.left-home img {
+    width: 100%;
+}
