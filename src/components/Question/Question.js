@@ -35,9 +35,9 @@ export default function Question({ defaultQstn, setDefaultQstn, questions, optio
     }
   }
   return (
-    <div>
+    <div className="question-container">
       <h2>Question: {defaultQstn + 1}</h2>
-      <div className="question-container">
+      <div>
         <h2>{questions[defaultQstn].question}</h2>
         <div className="question-options">
           {error && <ErrorMsg />}

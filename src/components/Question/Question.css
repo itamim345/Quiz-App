@@ -1,11 +1,14 @@
+.question-container {
+    text-align: center;
+}
 .question-options button {
     display: inline-block;
     border: none;
     padding: 10px;
     font-size: 1.4rem;
     margin: 1rem 0;
-    width: 40%;
-    margin: 1rem .5rem;
+    width: 45%;
+    margin: .5rem .5%;
 }
 
 .select {
