@@ -24,7 +24,7 @@ export default function Home({name, setName, getQuestions}) {
   return (
     <div className="home">
       <div className="left-home">
-        
+        <img src="https://i.ibb.co/68WmdKB/quiz-imh.png" alt="left-home-img" />
       </div>
       <div className="right-home">
         <div className="quiz-configure-title">
