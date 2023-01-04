@@ -24,7 +24,7 @@ export default function Home({name, setName, getQuestions}) {
   return (
     <div className="home">
       <div className="left-home">
-        <img src="https://i.ibb.co/68WmdKB/quiz-imh.png" alt="left-home-img" />
+        <img src="https://i.ibb.co/16r8YQg/quiz-imh.png" alt="left-home-img" />
       </div>
       <div className="right-home">
         <div className="quiz-configure-title">
@@ -73,7 +73,7 @@ export default function Home({name, setName, getQuestions}) {
           </TextField>
 
           <Button variant="contained" color="secondary" onClick={handleSubmit}>
-              Start Quiz
+            Start Quiz
           </Button>
         </div>
       </div>
