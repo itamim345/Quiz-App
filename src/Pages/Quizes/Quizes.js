@@ -20,24 +20,30 @@ export default function Quizes({name, questions, score, setScore, getQuizes}) {
         return myoptions.sort(() => Math.random() - 0.5)
     }
   return (
-    <div className='quizes-container'>
-      <span>Welcome {name}</span>
+    <div className="quizes-container">
+      <span>
+        Welcome <strong>{name}</strong>
+      </span>
       {questions ? (
         <>
-          <div className="additinal-info">
-            <span>Catagory: {questions[defaultQstn].category} </span>
-            <span>| Score: {score}</span>
-            <Question 
-                defaultQstn={defaultQstn}
-                setDefaultQstn={setDefaultQstn}
-                questions={questions}
-                options={options}
-                correct_answer={questions[defaultQstn]?.correct_answer}
-                score={score}
-                setScore={setScore}
-                getQuizes={getQuizes}
-            />
+          <div className="additional-info">
+            <span>
+              <strong>Catagory:</strong> {questions[defaultQstn].category}{" "}
+            </span>
+            <span>
+              | <strong>Score:</strong> {score}
+            </span>
           </div>
+          <Question
+            defaultQstn={defaultQstn}
+            setDefaultQstn={setDefaultQstn}
+            questions={questions}
+            options={options}
+            correct_answer={questions[defaultQstn]?.correct_answer}
+            score={score}
+            setScore={setScore}
+            getQuizes={getQuizes}
+          />
         </>
       ) : (
         <CircularProgress size={150} thickness={1}></CircularProgress>
