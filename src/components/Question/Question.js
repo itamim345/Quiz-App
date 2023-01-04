@@ -54,10 +54,10 @@ export default function Question({ defaultQstn, setDefaultQstn, questions, optio
             ))}
         </div>
         <div className="bootom-btns">
-          <Button variant="contained" color="secondary" href="/">
+          <Button variant="contained" color="secondary" href="/" className='btm-btn'>
             Quit
           </Button>
-          <Button variant="contained" color="primary" onClick={handleNext}>
+          <Button variant="contained" color="primary" onClick={handleNext} className="btm-btn">
             Next
           </Button>
         </div>
