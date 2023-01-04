@@ -17,3 +17,6 @@
     flex-direction: column;
     gap: 1rem;
 }
+.quiz-configure-title {
+    text-align: center;
+}

@@ -28,7 +28,7 @@ export default function Home({name, setName, getQuestions}) {
       </div>
       <div className="right-home">
         <div className="quiz-configure-title">
-          <h3>Configure the Quiz Options</h3>
+          <h2>Configure the Quiz Options</h2>
         </div>
         <div className="quiz-configure-options">
           {error && <ErrorMsg />}
@@ -73,7 +73,7 @@ export default function Home({name, setName, getQuestions}) {
           </TextField>
 
           <Button variant="contained" color="secondary" onClick={handleSubmit}>
-            Secondary
+              Start Quiz
           </Button>
         </div>
       </div>
