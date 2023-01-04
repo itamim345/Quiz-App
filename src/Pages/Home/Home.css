@@ -1,12 +1,19 @@
 .home {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .left-home{
-    width: 50%;
+    width: 45%;
 }
 .right-home {
-    width: 50%;
+    width: 45%;
 }
 .left-home img {
-    width: 100%;
+    width: 90%;
+}
+.right-home .quiz-configure-options {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
