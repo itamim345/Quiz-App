@@ -1,3 +1,6 @@
 .score-container {
     text-align: center;
 }
+.score-container img {
+    width: 20%;
+}
