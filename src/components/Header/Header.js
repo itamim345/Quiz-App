@@ -4,7 +4,7 @@ import "../Header/Header.css"
 
 function Header() {
   return (
-    <div>
+    <div className='header'>
       <Link to="/">
         <h2>
           Quiz<span>Club</span>
