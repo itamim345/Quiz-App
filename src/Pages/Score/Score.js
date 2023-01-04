@@ -4,7 +4,7 @@ import "./Score.css"
 
 export default function Score({name, score}) {
   return (
-    <div>
+    <div className='score-container'>
       <h3>
         Congratulations! <i>{name}</i>
       </h3>
