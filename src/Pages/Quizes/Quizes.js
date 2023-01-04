@@ -19,7 +19,7 @@ export default function Quizes({name, questions, score, setScore, getQuizes}) {
         return myoptions.sort(() => Math.random() - 0.5)
     }
   return (
-    <div>
+    <div className='quizes-container'>
       <span>Welcome {name}</span>
       {questions ? (
         <>
