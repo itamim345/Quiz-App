@@ -1,10 +1,11 @@
 .question-options button {
-    display: block;
+    display: inline-block;
     border: none;
     padding: 10px;
     font-size: 1.4rem;
     margin: 1rem 0;
     width: 40%;
+    margin: 1rem .5rem;
 }
 
 .select {
