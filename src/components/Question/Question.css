@@ -10,8 +10,8 @@ h2{
     padding: 10px;
     font-size: 1.4rem;
     margin: 1rem 0;
-    width: 45%;
-    margin: .5rem .5%;
+    width: 46%;
+    margin: .5rem 2%;
 }
 
 .select {
@@ -21,4 +21,10 @@ h2{
 .wrong {
     background: crimson;
     color: #fff;
+}
+.bootom-btns {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 1rem;
 }
