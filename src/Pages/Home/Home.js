@@ -28,7 +28,7 @@ export default function Home({name, setName, getQuestions}) {
       </div>
       <div className="right-home">
         <div className="quiz-configure-title">
-          <h2>Configure the Quiz Options</h2>
+          <h1>Configure the Quiz Options</h1>
         </div>
         <div className="quiz-configure-options">
           {error && <ErrorMsg />}
