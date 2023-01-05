@@ -20,6 +20,8 @@
 .quiz-configure-title {
     text-align: center;
 }
+
+/* Responsive CSS  */
 @media screen and (max-width: 992px){
     .home {
         flex-direction: column;
