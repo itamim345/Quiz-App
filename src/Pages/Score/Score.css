@@ -4,3 +4,6 @@
 .score-container img {
     width: 20%;
 }
+.score-container h3 i {
+    color: crimson;
+}
