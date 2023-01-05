@@ -1,0 +1,7 @@
+.error-msg span {
+    color: red;
+    font-size: 1.5rem;
+    border: 1.5px solid red;
+    padding: .1rem .5rem;
+    border-radius: .3rem;
+}
