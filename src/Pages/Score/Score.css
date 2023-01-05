@@ -1,9 +1,19 @@
 .score-container {
     text-align: center;
+    width: 90%;
+    margin: 0 auto;
 }
 .score-container img {
     width: 20%;
 }
 .score-container h3 i {
     color: crimson;
+}
+
+/* Responsive CSS */
+@media screen and (max-width: 768px) {
+    .score-container img {
+    width: 40%;
+}
+
 }
