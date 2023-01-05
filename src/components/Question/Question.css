@@ -1,8 +1,11 @@
 h2{
     margin: 1rem 0;
+    font-size: 1.5rem;
 }
 .question-container {
     text-align: center;
+    width: 90%;
+    margin: 0 auto;
 }
 .question-options button {
     display: inline-block;
@@ -32,4 +35,16 @@ h2{
 }
 .bootom-btns .btm-btn {
     padding: .5rem 5rem;
+}
+
+/* Responsive CSS */
+@media screen and (max-width: 768px){
+    .question-options button {
+        display: block;
+        width: 90%;
+        margin: 1rem auto;
+    }
+    .bootom-btns .btm-btn {
+        padding: .5rem 2rem;
+    }
 }
