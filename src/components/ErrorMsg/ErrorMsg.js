@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function ErrorMsg() {
+export default function ErrorMsg({error}) {
   return (
     <div>
-      Please Fill All the Fields
+      <span>{error}</span>
     </div>
   );
 }
