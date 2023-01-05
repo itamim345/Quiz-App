@@ -20,3 +20,14 @@
 .quiz-configure-title {
     text-align: center;
 }
+@media screen and (max-width: 992px){
+    .home {
+        flex-direction: column;
+    }
+    .left-home{
+    width: 90%;
+}
+.right-home {
+    width: 90%;
+}
+}
