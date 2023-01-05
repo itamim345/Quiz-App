@@ -40,7 +40,7 @@ export default function Question({ defaultQstn, setDefaultQstn, questions, optio
       <div>
         <h2>{questions[defaultQstn].question}</h2>
         <div className="question-options">
-          {error && <ErrorMsg />}
+          {error && <ErrorMsg error={error}/>}
           {options &&
             options.map((optn) => (
               <button
