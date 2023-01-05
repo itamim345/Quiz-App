@@ -13,7 +13,7 @@ export default function Home({name, setName, getQuestions}) {
 
     const handleSubmit = () => {
         if(!category || !difficulty || !name){
-            setError(true)
+            setError("Please select all the fields!")
             return;
         }else {
             setError(false)
@@ -31,7 +31,7 @@ export default function Home({name, setName, getQuestions}) {
           <h1>Configure the Quiz Options</h1>
         </div>
         <div className="quiz-configure-options">
-          {error && <ErrorMsg />}
+          {error && <ErrorMsg error={error} />}
           <TextField
             label="Enter your name"
             variant="outlined"
