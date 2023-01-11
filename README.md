@@ -10,7 +10,7 @@ It's Fully Responsive.
 
 ## Preview
 
-![App Screenshot](#)
+![App Screenshot](https://i.ibb.co/cQsQsNh/project-screenshot.png)
 
 ## Live Link
 
